@@ -14,7 +14,7 @@ import android.widget.Toast;
 public class SearchActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     MovieAdapter adapter;
-//    SearchView searchView;
+    SearchView searchView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,7 +22,22 @@ public class SearchActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.RecyclerView);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        getmovies();
+        searchView=findViewById(R.id.searchBar);
+        searchView.onActionViewExpanded();
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                getmovies();
+                //Here u can get the value "query" which is entered in the search box.
+                return true;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                //This is your adapter that will be filtered
+                return false;
+            }
+        });
     }
 
     private void getmovies() {

@@ -8,16 +8,16 @@ tools:context=".SearchActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:id="@+id/toolbar_search_activity"
         android:background="#FAE105"
         tools:ignore="MissingConstraints">
+
         <androidx.appcompat.widget.SearchView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/searchBar"
-            app:queryHint="Search by Title">
-
+            app:queryHint="Search TMDb">
 
         </androidx.appcompat.widget.SearchView>
     </androidx.appcompat.widget.Toolbar>
@@ -40,9 +40,9 @@ tools:context=".SearchActivity">
                 android:id="@+id/imageViewreel"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                app:srcCompat="@drawable/filmreel"
+                app:srcCompat="@drawable/ic_baseline_local_movies_24"
                 android:layout_gravity="center"
-                />
+                tools:ignore="VectorDrawableCompat" />
 
             <TextView
                 android:id="@+id/textViewSearch"
