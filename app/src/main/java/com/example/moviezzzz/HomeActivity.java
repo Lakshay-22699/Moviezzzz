@@ -28,6 +28,7 @@ import java.util.ArrayList;
 public class HomeActivity extends AppCompatActivity {
     ActivityHomeBinding activityHomeBinding;
     //comment
+    //comment2
     private Toolbar toolbar;
     RecyclerView recyclerView;
     MovieAdapter adapter;
