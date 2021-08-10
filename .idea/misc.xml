@@ -4,6 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Android_/ws/Moviezzzz/app/src/main/res/layout/activity_home.xml" value="0.14765625" />
+        <entry key="..\:/Tmdb2/app/src/main/res/layout/activity_home.xml" value="0.11574074074074074" />
+        <entry key="..\:/Tmdb2/app/src/main/res/layout/activity_movie_detail.xml" value="0.25" />
+        <entry key="..\:/Tmdb2/app/src/main/res/layout/activity_search.xml" value="0.11574074074074074" />
+        <entry key="..\:/Tmdb2/app/src/main/res/layout/dialog_add_rating.xml" value="0.18645833333333334" />
+        <entry key="..\:/Tmdb2/app/src/main/res/layout/dialog_add_review.xml" value="0.18645833333333334" />
+        <entry key="..\:/Tmdb2/app/src/main/res/layout/movie_item.xml" value="0.1" />
       </map>
     </option>
   </component>

@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="#C1C0C0"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
@@ -25,14 +26,24 @@
             >
 
 
-            <ImageView
+            <!--<ImageView
                 android:id="@+id/posterr"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
-                app:srcCompat="@drawable/thor" />
+                app:srcCompat="@drawable/thor" />-->
 
+            <TextView
+                android:id="@+id/mtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -41,9 +52,9 @@
 
                 <ImageView
                     android:id="@+id/starr"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_marginLeft="5dp"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="15dp"
                     android:layout_marginRight="10dp"
                     app:srcCompat="@drawable/star"
                     android:layout_gravity="center"/>
@@ -55,21 +66,11 @@
                     android:layout_gravity="center"
                     android:text="4.3"
                     android:textColor="@color/black"
-                    android:textSize="20dp"
+                    android:textSize="25sp"
                     />
 
             </LinearLayout>
 
-            <TextView
-                android:id="@+id/mtitle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Thor"
-                android:textColor="@color/black"
-                android:textSize="20dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="10dp"
-                />
 
         </LinearLayout>
 

@@ -13,21 +13,12 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.List;
+
 public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.HeroViewHolder> {
-
-
-//    private List<Contact> contactList;
-    private Context context;
-
-    private static int currentPosition = 0;
-
-//    public MovieAdapter(List<Contact> cl, Context context) {
-//        this.contactList = cl;
-//        this.context = context;
-//    }
-
-    public MovieAdapter(Context applicationContext) {
-        this.context=applicationContext;
+    List<Datas> values;
+    public MovieAdapter(Context context,List<Datas> values) {
+        this.values=values;
     }
 
     @Override
@@ -38,26 +29,21 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.HeroViewHold
 
     @Override
     public void onBindViewHolder(final HeroViewHolder holder, final int position) {
+            holder.title.setText(values.get(position).title);
+            holder.rating.setText(values.get(position).rating);
     }
 
     @Override
     public int getItemCount() {
-        return 10;
+        return values.size();
     }
 
     class HeroViewHolder extends RecyclerView.ViewHolder {
         TextView rating,title;
-        ImageView imageView;
-        LinearLayout linearLayout;
-
         HeroViewHolder(View itemView) {
             super(itemView);
-
             rating = itemView.findViewById(R.id.rating);
             title = itemView.findViewById(R.id.mtitle);
-            imageView = itemView.findViewById(R.id.posterr);
-
-//            linearLayout = itemView.findViewById(R.id.fulldetals);
         }
     }
 }
